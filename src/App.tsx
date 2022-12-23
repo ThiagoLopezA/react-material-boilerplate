@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <NotFoundProvider notFoundPage={<div>Not Found</div>}>
         <Route path="login" element={<div>Login</div>} />
-        <Route path="private" element={<PrivateRouter />} />
+        <Route path="private/*" element={<PrivateRouter />} />
       </NotFoundProvider>
     </BrowserRouter>
   );
